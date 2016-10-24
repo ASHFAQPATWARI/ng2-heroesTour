@@ -4,24 +4,6 @@
 
 <br>
 
-<div class="row">
-
-  <div class="col-xs-12 col-sm-4">
-
-    <ul class="list-group">
-
-      <li class="list-group-item list-group-item-action cursor" *ngFor="let hero of heroes" (click)="selectHero(hero)" [class.active]="hero === selectedHero" >
-
-        <b>{{hero.id}}. <i>{{hero.name}}</i></b>
-
-      </li>
-
-    </ul>
-
-  </div>
-
-</div>
-
-<br>
-
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+<a routerLink="/heroes" >Heroes</a>
+<router-outlet></router-outlet>
+<!--<app-heroes>  </app-heroes>-->
